@@ -1,32 +1,35 @@
-import Link from "next/link";
-const downloads = [
-  { title: "PRODUCT DATA-SHEET", link: "#" },
-  { title: "DIMENSION TABLES", link: "#" },
-  { title: "COATING/MATERIAL OPTIONS", link: "#" },
-  { title: "MAINTENANCE OR INSTALLATION GUIDE", link: "#" },
+"use client";
+import React from "react";
+
+const resources = [
+  { name: "PRODUCT DATA-SHEET" },
+  { name: "DIMENSION TABLES" },
+  { name: "COATING/MATERIAL OPTIONS" },
+  { name: "MAINTENANCE OR INSTALLATION GUIDE" },
 ];
 
-export default function TechnicalDownloads() {
+export default function TechnicalResources() {
   return (
-    <div className="Section bg-white">
+    <section className="Section bg-white">
       {/* Title */}
-      <h2 className="Heading text-center ">
+      <h2 className="Heading text-center mb-8">
         Technical Downloads & Resources
       </h2>
 
-      {/* List */}
-      <div className="space-y-4 mt-4 sm:px-10">
-        {downloads.map((item, idx) => (
-          <Link
-            key={idx}
-            href={item.link}
-            className="bg-[#FACC48] transition-all duration-200 flex items-center justify-between px-12 py-3 rounded-md shadow-sm"
+      {/* Resources Grid */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+        {resources.map((item, index) => (
+          <div
+            key={index}
+            className="bg-[#0E509E] text-white text-center py-10 rounded-md flex flex-col items-center justify-center space-y-2 hover:bg-[#FACC48] transition"
           >
-            <span className="text-[#0E509E] sm:text-xl text-md font-semibold">{item.title}</span>
-            <span className="text-[#0E509E] text-lg font-bold transition-transform group-hover:translate-x-1">{`>>`}</span>
-          </Link>
+            <p className="text-sm sm:text-base md:text-lg font-medium uppercase tracking-wide">
+              {item.name}
+            </p>
+            <span className="text-lg sm:text-xl font-bold">{">>"}</span>
+          </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

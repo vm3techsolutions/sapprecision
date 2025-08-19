@@ -1,30 +1,28 @@
-
-import ApplicationsIndustries from "./home/ApplicationsIndustries";
+import Applications from "./home/Applications";
 import CenterIMG from "./home/CenterIMG";
-import FeaturesBenefits from "./home/FeaturesBenefits";
+import Features from "./home/Features";
 import Gallery from "./home/Gallery";
 import GetYourQuoteForm from "./home/GetYourQuoteForm";
 import HomeBanner from "./home/HomeBanner";
-import Quality from "./home/Quality";
+import MaterialsRange from "./home/MaterialsRange";
 import RelatedProducts from "./home/RelatedProducts";
-import SapPartCom from "./home/SapPartCom";
 import TechnicalDownloads from "./home/TechnicalDownloads";
-import Testimonials from "./home/Testimonials";
+import Testimonal from "./Testimonal";
+
 
 export default function Home() {
   return (
     <div>
 
       <HomeBanner/>
-      <SapPartCom/>
-      <FeaturesBenefits/>
-      <ApplicationsIndustries/>
-      <Quality/>
+     <MaterialsRange/>
+     <Features/>
+     <Applications/>
       <CenterIMG/>
-      <TechnicalDownloads/>
+     <TechnicalDownloads/>
       <Gallery/>
       <RelatedProducts/>
-      <Testimonials/>
+      <Testimonal/>
       <GetYourQuoteForm/>
       
     </div>
