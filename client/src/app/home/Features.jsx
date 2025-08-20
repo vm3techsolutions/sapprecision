@@ -12,7 +12,7 @@ const features = [
 
 export default function FeaturesBenefits() {
   return (
-    <section className="bg-[#D9D9D9]/12 Section">
+    <section className="bg-[#D9D9D9]/12 Section" id="Features">
       {/* Title */}
       <h2 className="Heading text-center mb-8">Features & Benefits</h2>
 

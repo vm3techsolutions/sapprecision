@@ -11,7 +11,7 @@ const industries = [
 
 export default function ApplicationsIndustries() {
   return (
-    <section className="bg-white Section">
+    <section className="bg-white Section" id="Applications">
       {/* Title */}
       <h2 className="Heading text-center mb-8">
         Applications & Industries

@@ -10,7 +10,7 @@ const resources = [
 
 export default function TechnicalResources() {
   return (
-    <section className="Section bg-white">
+    <section className="Section bg-white" id="Downloads">
       {/* Title */}
       <h2 className="Heading text-center mb-8">
         Technical Downloads & Resources

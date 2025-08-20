@@ -12,7 +12,7 @@ const products = [
 
 export default function RelatedProducts() {
   return (
-    <div className="Section bg-white ">
+    <div className="Section bg-white " id="Products">
       {/* Title */}
       <h2 className="Heading text-center mb-8">Related Products</h2>
 

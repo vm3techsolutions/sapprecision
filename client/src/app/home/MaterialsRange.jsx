@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function SinteredProducts() {
   return (
-    <section className="Section bg-white ">
+    <section className="Section bg-white " id="Overview">
       {/* Description */}
       <p className="text-center mx-auto text-gray-700 mb-8">
         Sintered products are metal components formed by compacting and heating

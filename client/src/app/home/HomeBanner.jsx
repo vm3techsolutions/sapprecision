@@ -13,7 +13,7 @@ export default function BannerImage() {
     <div className="w-full bg-white flex justify-center items-center sm:px-4">
       <div>
         <Image
-          src="/assets/home/PrecisionBanner.png"
+          src="/assets/home/HomeBanner.png"
           alt="Banner"
           width={933}
           height={512}

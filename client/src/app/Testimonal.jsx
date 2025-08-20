@@ -49,7 +49,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="flex flex-col md:flex-row items-center bg-white Section">
+    <section className="flex flex-col md:flex-row items-center bg-white Section" id="Testimonials">
       {/* Left side */}
       <div className="w-full md:w-2/4 flex flex-col items-center px-6 mb-8 md:mb-0 text-center">
         <span className="bg-[#0E509E] text-white px-4 py-1 rounded-md text-lg font-medium mb-4">

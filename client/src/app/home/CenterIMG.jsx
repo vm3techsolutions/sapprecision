@@ -11,7 +11,7 @@ const points = [
 
 export default function QualityAssurance() {
   return (
-    <section className="relative w-full">
+    <section className="relative w-full" id="Quality">
       {/* Desktop Background image */}
       <div className="absolute inset-0 hidden md:block">
         <Image
