@@ -8,15 +8,15 @@ export default function Footer() {
   const { t } = useTranslation();
 
   const navLinks = [
-    { name: "Overview", href: "#Overview" },
-    { name: "Features", href: "#Features" },
-    { name: "Applications", href: "#Applications" },
-    { name: "Quality Assurance", href: "#Quality" },
-    { name: "Downloads", href: "#Downloads" },
-    { name: "Gallery", href: "#Gallery" },
-    { name: "Related Products", href: "#Products" },
-    { name: "Testimonials", href: "#Testimonials" },
-    { name: "Enquiry", href: "#Enquiry" },
+    { name: t("Overview"), href: "#Overview" },
+    { name: t("Features"), href: "#Features" },
+    { name: t("Applications"), href: "#Applications" },
+    { name: t("Quality Assurance"), href: "#Quality" },
+    { name: t("Downloads"), href: "#Downloads" },
+    { name: t("Gallery"), href: "#Gallery" },
+    { name: t("Related Products"), href: "#Products" },
+    { name: t("Testimonials"), href: "#Testimonials" },
+    { name: t("Enquiry"), href: "#Enquiry" },
   ];
 
   return (
@@ -28,7 +28,7 @@ export default function Footer() {
         <div>
           <Image
             src="/assets/home/FooterLogo.png"
-            alt="SAP Parts"
+            alt={t("SAP Parts")}
             width={140}
             height={50}
             className="mb-4"
@@ -38,9 +38,7 @@ export default function Footer() {
         {/* Description */}
         <div className="sm:-ml-20">
           <p className="text-md text-gray-300 ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nunc feugiat, mauris non bibendum gravida, sapien purus 
-            facilisis neque, et porttitor magna arcu ac justo.
+            {t("FooterDescription")}
           </p>
         </div>
 

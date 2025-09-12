@@ -18,16 +18,16 @@ export default function Header() {
   };
 
   const navLinks = [
-    { name: "Overview", href: "#Overview" },
-    { name: "Features", href: "#Features" },
-    { name: "Applications", href: "#Applications" },
-    { name: "Quality Assurance", href: "#Quality" },
-    { name: "Downloads", href: "#Downloads" },
-    { name: "Gallery", href: "#Gallery" },
-    { name: "Related Products", href: "#Products" },
-    { name: "Testimonials", href: "#Testimonials" },
-    { name: "Enquiry", href: "#Enquiry" },
-  ];
+  { name: t("Overview"), href: "#Overview" },
+  { name: t("Features"), href: "#Features" },
+  { name: t("Applications"), href: "#Applications" },
+  { name: t("Quality Assurance"), href: "#Quality" },
+  { name: t("Downloads"), href: "#Downloads" },
+  { name: t("Gallery"), href: "#Gallery" },
+  { name: t("Related Products"), href: "#Products" },
+  { name: t("Testimonials"), href: "#Testimonials" },
+  { name: t("Enquiry"), href: "#Enquiry" }
+];
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow">
@@ -44,7 +44,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-1.5 text-[#0E509E] text-md font-medium">
+        <nav className="hidden md:flex items-center gap- text-[#0E509E] text-md font-medium">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -66,6 +66,7 @@ export default function Header() {
             >
               <option value="en">English</option>
               <option value="ja">Japanese</option>
+              <option value="de">German</option>
             </select>
           </div>
         </nav>
@@ -104,6 +105,7 @@ export default function Header() {
             >
               <option value="en">English</option>
               <option value="ja">Japanese</option>
+               <option value="de">German</option>
             </select>
           </div>
         </div>

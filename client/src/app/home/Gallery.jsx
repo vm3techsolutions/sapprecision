@@ -1,4 +1,8 @@
+"use client";
+import React from "react";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
+
 const galleryImages = [
   "/assets/home/Gallery.png",
   "/assets/home/Gallery.png",
@@ -7,12 +11,12 @@ const galleryImages = [
 ];
 
 export default function Gallery() {
+  const { t } = useTranslation();
+
   return (
-    <div className="Section bg-white " id="Gallery">
+    <div className="Section bg-white" id="Gallery">
       {/* Title */}
-      <h2 className="Heading text-center ">
-        Gallery
-      </h2>
+      <h2 className="Heading text-center">{t("galleryTitle")}</h2>
 
       {/* Images */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-4">
@@ -20,9 +24,9 @@ export default function Gallery() {
           <div key={idx}>
             <Image
               src={img}
-               width={933}
-          height={512}
-              alt={`Gallery ${idx + 1}`}
+              width={933}
+              height={512}
+              alt={`${t("galleryTitle")} ${idx + 1}`}
               className="w-full rounded-lg shadow-sm object-cover transition-transform duration-500 ease-in-out transform hover:scale-105"
             />
           </div>

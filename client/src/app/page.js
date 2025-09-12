@@ -7,7 +7,7 @@ import HomeBanner from "./home/HomeBanner";
 import MaterialsRange from "./home/MaterialsRange";
 import RelatedProducts from "./home/RelatedProducts";
 import TechnicalDownloads from "./home/TechnicalDownloads";
-import Testimonal from "./Testimonal";
+import Testimonal from "./home/Testimonal";
 
 
 export default function Home() {

@@ -1,19 +1,22 @@
 "use client";
 import React from "react";
-
-const resources = [
-  { name: "PRODUCT DATA-SHEET" },
-  { name: "DIMENSION TABLES" },
-  { name: "COATING/MATERIAL OPTIONS" },
-  { name: "MAINTENANCE OR INSTALLATION GUIDE" },
-];
+import { useTranslation } from "react-i18next";
 
 export default function TechnicalResources() {
+  const { t } = useTranslation();
+
+  const resources = [
+    { key: "productDataSheet" },
+    { key: "dimensionTables" },
+    { key: "coatingOptions" },
+    { key: "maintenanceGuide" },
+  ];
+
   return (
     <section className="Section bg-white" id="Downloads">
       {/* Title */}
       <h2 className="Heading text-center mb-8">
-        Technical Downloads & Resources
+        {t("technicalDownloadsTitle")}
       </h2>
 
       {/* Resources Grid */}
@@ -24,7 +27,7 @@ export default function TechnicalResources() {
             className="bg-[#0E509E] text-white text-center py-10 rounded-md flex flex-col items-center justify-center space-y-2 hover:bg-[#FACC48] transition"
           >
             <p className="text-sm sm:text-base md:text-lg font-medium uppercase tracking-wide">
-              {item.name}
+              {t(item.key)}
             </p>
             <span className="text-lg sm:text-xl font-bold">{">>"}</span>
           </div>
