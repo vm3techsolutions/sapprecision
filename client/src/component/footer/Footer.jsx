@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 export default function Footer() {
@@ -64,11 +64,11 @@ export default function Footer() {
           <p className="text-md text-gray-300 mb-3">{t("Email")}: sales@sapparts.com</p>
           
           {/* Social Icons */}
-          <div className="flex items-center gap-3 text-[#363636] text-2xl mt-4">
-            <Link href="#"><FaFacebookF className="rounded-full bg-[#FACC48] p-1" /></Link>
-            <Link href="#"><FaInstagram className="rounded-full bg-[#FACC48] p-1" /></Link>
-            <Link href="#"><FaYoutube className="rounded-full bg-[#FACC48] p-1" /></Link>
-            <Link href="#"><FaLinkedinIn className="rounded-full bg-[#FACC48] p-1" /></Link>
+          <div className="flex items-center gap-3 text-[#363636] text-2xl">
+            <Link href="https://www.facebook.com/sappartspvtltd/"><FaFacebookF className="rounded-full bg-[#FACC48] p-1" /></Link>
+            <Link href="https://x.com/sap_parts"><FaTwitter className="rounded-full bg-[#FACC48] p-1" /></Link>
+            {/* <Link href="#"><FaYoutube className="rounded-full bg-[#FACC48] p-1" /></Link> */}
+            <Link href="https://www.linkedin.com/in/sap-parts-811717238/"><FaLinkedinIn className="rounded-full bg-[#FACC48] p-1" /></Link>
           </div>
         </div>
       </div>
